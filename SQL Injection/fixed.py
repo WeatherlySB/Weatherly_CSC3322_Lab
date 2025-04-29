@@ -13,7 +13,8 @@ class SecureSQLTester:
         """Initialize an in-memory SQLite database with test users"""
         self.conn = sqlite3.connect(':memory:')
         cursor = self.conn.cursor()
-       
+        
+        # Create users table with more fields for a realistic scenario
         cursor.execute('''
         CREATE TABLE users (
             id INTEGER PRIMARY KEY,

@@ -9,6 +9,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 from colorama import Fore, Style, init
 
+#FOR LOGGING ONLY
 # Set up logging configuration
 def setup_logging(log_file='ddos_simulator.log', console_level=logging.INFO, file_level=logging.DEBUG):
     """
@@ -50,6 +51,7 @@ def setup_logging(log_file='ddos_simulator.log', console_level=logging.INFO, fil
     
     return logger
 
+#FOR LOGGING ONLY
 class ColoredLogHandler(logging.StreamHandler):
     """Custom handler that adds colorama colors to console output based on log level"""
     
@@ -66,6 +68,12 @@ class ColoredLogHandler(logging.StreamHandler):
         color = self.COLORS.get(record.levelno, Fore.WHITE)
         record.msg = f"{color}{record.msg}{Style.RESET_ALL}"
         super().emit(record)
+
+
+####################################################################################################################################
+
+####################################################################################################################################
+
 
 class SimulatedWebServer:
     def __init__(self, port=8000, max_workers=100, response_delay=0.1, logger=None):
@@ -425,6 +433,8 @@ class DDoSSimulator:
                 time.sleep(delay - elapsed)
     
 
+    #Logging Functionality
+    #LOGGING: statistics 
     def print_response_time_trends(self):
         """Print current response time trends."""
         # Only print if we have enough data
@@ -450,7 +460,9 @@ class DDoSSimulator:
         
         if not window_stats:
             return
-            
+
+        #LOGGING
+        # #LOGGING: window stats    
         # Calculate trend
         if len(window_stats) >= 2:
             first_avg = window_stats[0]['avg']
@@ -471,6 +483,7 @@ class DDoSSimulator:
     
 
     def start(self):
+        # LOGGING SECTION
         self.logger.info(f"Starting DDoS simulation against {self.target_url}")
         self.logger.info(f"Workers: {self.num_workers}")
         self.logger.info(f"Duration: {self.duration} seconds")
@@ -523,6 +536,11 @@ class DDoSSimulator:
     
         self.print_report()
     
+    #LOGGING
+    #LOGGING: DDoS simulation Report
+    #LOGGING: Response time statistics
+    #LOGGING: Response time
+    #LOGGING: response time trends
     def print_report(self):
         """Print a detailed report of the simulation with response time analysis."""
         elapsed = time.time() - self.stats['start_time']
@@ -613,6 +631,8 @@ class DDoSSimulator:
         else:
             self.logger.info("Minimal impact: Website can likely handle this load")
 
+#END OF LOGGING FUNCTION
+#PRINT_REPORT function ends here
 
 def get_local_ip():
     try:

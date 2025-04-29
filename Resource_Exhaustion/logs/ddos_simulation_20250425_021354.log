@@ -1,0 +1,1088 @@
+2025-04-25 02:13:54,012 [MainThread] INFO: === DDoS Attack Simulation and Protection Demo ===
+2025-04-25 02:13:54,012 [MainThread] INFO: This demo will show how the system detects and blocks DDoS attacks.
+2025-04-25 02:13:54,012 [MainThread] INFO: All output is also being saved to logs/ddos_simulation_20250425_021354.log
+2025-04-25 02:13:54,012 [NormalTraffic] INFO: Starting normal background traffic for 60 seconds - Thread: NormalTraffic
+2025-04-25 02:13:54,012 [MainThread] INFO: Waiting 10 seconds for normal traffic to establish baseline...
+2025-04-25 02:13:54,152 [NormalTraffic] INFO: Normal request 192.168.1.49_1745547234012 from 192.168.1.49 to /contact: Status: 500, Response: Simulated server error
+2025-04-25 02:13:57,039 [NormalTraffic] INFO: Normal request 192.168.1.28_1745547236906 from 192.168.1.28 to /products: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:01,328 [NormalTraffic] INFO: Normal request 192.168.1.46_1745547241251 from 192.168.1.46 to /products: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:03,218 [NormalTraffic] INFO: Normal request 192.168.1.4_1745547243071 from 192.168.1.4 to /services: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:04,013 [MainThread] INFO: --- DDoS Protection Statistics ---
+2025-04-25 02:14:04,013 [MainThread] INFO: Total tracked IPs: 4
+2025-04-25 02:14:04,013 [MainThread] INFO: Blacklisted IPs: 0
+2025-04-25 02:14:04,013 [MainThread] INFO: Greylisted IPs: 0
+2025-04-25 02:14:04,013 [MainThread] INFO: IPs requiring CAPTCHA: 0
+2025-04-25 02:14:04,013 [MainThread] INFO: Trusted IPs: 0
+2025-04-25 02:14:04,013 [MainThread] INFO: Request patterns tracked: 3
+2025-04-25 02:14:04,013 [MainThread] INFO: Sample of IP reputation scores:
+2025-04-25 02:14:04,013 [MainThread] INFO: - 192.168.1.49: 500/1000
+2025-04-25 02:14:04,013 [MainThread] INFO: - 192.168.1.28: 500/1000
+2025-04-25 02:14:04,013 [MainThread] INFO: - 192.168.1.46: 500/1000
+2025-04-25 02:14:04,013 [MainThread] INFO: - 192.168.1.4: 500/1000
+2025-04-25 02:14:04,014 [FloodAttack] WARNING: Starting flood DDoS attack for 20 seconds - Thread: FloodAttack
+2025-04-25 02:14:04,145 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547244014 from 10.0.0.9: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:04,331 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547244224 from 10.0.0.3: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:04,508 [NormalTraffic] INFO: Normal request 192.168.1.40_1745547244420 from 192.168.1.40 to /products: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:04,516 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547244396 from 10.0.0.9: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:04,647 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547244589 from 10.0.0.3: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:04,786 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547244720 from 10.0.0.9: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:04,956 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547244883 from 10.0.0.8: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:05,170 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547245049 from 10.0.0.5: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:05,406 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547245259 from 10.0.0.4: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:05,594 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547245469 from 10.0.0.6: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:05,789 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547245687 from 10.0.0.7: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:05,991 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547245864 from 10.0.0.7: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:06,122 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547246056 from 10.0.0.6: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:06,292 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547246195 from 10.0.0.6: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:06,409 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547246347 from 10.0.0.4: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:06,541 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547246462 from 10.0.0.2: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:06,739 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547246627 from 10.0.0.5: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:06,976 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547246837 from 10.0.0.4: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:07,134 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547247044 from 10.0.0.3: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:07,307 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547247214 from 10.0.0.7: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:07,431 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547247364 from 10.0.0.4: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:07,600 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547247492 from 10.0.0.5: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:07,764 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547247661 from 10.0.0.6: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:07,960 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547247834 from 10.0.0.1: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:08,180 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547248037 from 10.0.0.6: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:08,408 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547248262 from 10.0.0.5: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:08,619 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547248493 from 10.0.0.7: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:08,791 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547248677 from 10.0.0.7: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:08,956 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547248849 from 10.0.0.3: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:09,152 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547249020 from 10.0.0.5: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:09,217 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547249217 from 10.0.0.6: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:09,403 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547249310 from 10.0.0.1: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:09,550 [NormalTraffic] INFO: Normal request 192.168.1.35_1745547249458 from 192.168.1.35 to /services: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:09,589 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547249485 from 10.0.0.4: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:09,642 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547249642 from 10.0.0.6: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:09,832 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547249739 from 10.0.0.1: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:09,905 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547249905 from 10.0.0.7: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:10,070 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547249989 from 10.0.0.8: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:10,241 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547250141 from 10.0.0.3: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:10,462 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547250313 from 10.0.0.9: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:10,522 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547250522 from 10.0.0.4: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:10,644 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547250585 from 10.0.0.2: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:10,714 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547250713 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:10,859 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547250796 from 10.0.0.1: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:10,944 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547250944 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:11,177 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547251038 from 10.0.0.2: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:11,326 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547251253 from 10.0.0.9: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:11,400 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547251400 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:11,444 [NormalTraffic] INFO: Normal request 192.168.1.39_1745547251299 from 192.168.1.39 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:11,592 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547251481 from 10.0.0.2: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:11,644 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547251644 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:11,740 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547251740 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:11,885 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547251826 from 10.0.0.8: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:11,980 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547251980 from 10.0.0.6: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,036 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547252036 from 10.0.0.4: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,124 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547252124 from 10.0.0.6: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,219 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547252219 from 10.0.0.6: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,397 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547252302 from 10.0.0.1: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:12,490 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547252490 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,551 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547252551 from 10.0.0.7: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,707 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547252635 from 10.0.0.2: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:12,779 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547252778 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,846 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547252846 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,898 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547252898 from 10.0.0.4: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:12,996 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547252996 from 10.0.0.7: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:13,088 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547253088 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:13,268 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547253163 from 10.0.0.8: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:13,337 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547253337 from 10.0.0.5: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:13,401 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547253401 from 10.0.0.4: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:13,471 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547253471 from 10.0.0.9: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:13,550 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547253550 from 10.0.0.5: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:14,668 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547253602 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:14,733 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547254733 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:14,857 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547254796 from 10.0.0.8: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:14,924 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547254924 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:14,999 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547254999 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:15,087 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547255087 from 10.0.0.8: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:15,155 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547255155 from 10.0.0.9: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:16,095 [NormalTraffic] INFO: Normal request 192.168.1.16_1745547255956 from 192.168.1.16 to /about: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:16,302 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547255217 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:16,390 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547256390 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:17,171 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547256448 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:17,225 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547257225 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:17,304 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547257304 from 10.0.0.7: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:17,375 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547257375 from 10.0.0.8: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:17,449 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547257449 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:17,541 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547257541 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:17,613 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547257613 from 10.0.0.4: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:18,288 [NormalTraffic] INFO: Normal request 192.168.1.7_1745547258168 from 192.168.1.7 to /products: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:19,103 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547257675 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:19,192 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547259192 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:20,200 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547259269 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:21,534 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547260281 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:21,622 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547261622 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:21,675 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547261674 from 10.0.0.5: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:21,756 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547261756 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:21,841 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547261841 from 10.0.0.9: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:21,893 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547261893 from 10.0.0.7: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:21,956 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547261956 from 10.0.0.4: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,013 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547262013 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,070 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547262070 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,168 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547262168 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,249 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547262249 from 10.0.0.8: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,327 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547262327 from 10.0.0.9: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,415 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547262415 from 10.0.0.5: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,503 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547262503 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,590 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547262590 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,649 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547262649 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,740 [FloodAttack] WARNING: Flood attack 10.0.0.3_1745547262740 from 10.0.0.3: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,833 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547262833 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:22,923 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547262923 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,014 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547263014 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,097 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547263097 from 10.0.0.9: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,190 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547263190 from 10.0.0.4: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,277 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547263277 from 10.0.0.7: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,327 [NormalTraffic] INFO: Normal request 192.168.1.1_1745547263227 from 192.168.1.1 to /contact: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:23,337 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547263337 from 10.0.0.6: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,409 [FloodAttack] WARNING: Flood attack 10.0.0.7_1745547263409 from 10.0.0.7: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,467 [FloodAttack] WARNING: Flood attack 10.0.0.1_1745547263467 from 10.0.0.1: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,529 [FloodAttack] WARNING: Flood attack 10.0.0.2_1745547263529 from 10.0.0.2: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,595 [FloodAttack] WARNING: Flood attack 10.0.0.9_1745547263595 from 10.0.0.9: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,656 [FloodAttack] WARNING: Flood attack 10.0.0.4_1745547263656 from 10.0.0.4: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,711 [FloodAttack] WARNING: Flood attack 10.0.0.6_1745547263711 from 10.0.0.6: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,790 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547263790 from 10.0.0.8: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,888 [FloodAttack] WARNING: Flood attack 10.0.0.5_1745547263888 from 10.0.0.5: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:23,965 [FloodAttack] WARNING: Flood attack 10.0.0.8_1745547263965 from 10.0.0.8: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:24,020 [MainThread] INFO: --- DDoS Protection Statistics ---
+2025-04-25 02:14:24,020 [MainThread] INFO: Total tracked IPs: 19
+2025-04-25 02:14:24,020 [MainThread] INFO: Blacklisted IPs: 0
+2025-04-25 02:14:24,020 [MainThread] INFO: Greylisted IPs: 0
+2025-04-25 02:14:24,020 [MainThread] INFO: IPs requiring CAPTCHA: 0
+2025-04-25 02:14:24,020 [MainThread] INFO: Trusted IPs: 0
+2025-04-25 02:14:24,020 [MainThread] INFO: Request patterns tracked: 5
+2025-04-25 02:14:24,021 [MainThread] INFO: Sample of IP reputation scores:
+2025-04-25 02:14:24,021 [MainThread] INFO: - 10.0.0.3: 300/1000
+2025-04-25 02:14:24,021 [MainThread] INFO: - 192.168.1.46: 500/1000
+2025-04-25 02:14:24,021 [MainThread] INFO: - 192.168.1.35: 500/1000
+2025-04-25 02:14:24,021 [MainThread] INFO: - 192.168.1.28: 500/1000
+2025-04-25 02:14:24,021 [MainThread] INFO: - 10.0.0.9: 500/1000
+2025-04-25 02:14:24,021 [MainThread] INFO: Waiting between attacks...
+2025-04-25 02:14:24,857 [NormalTraffic] INFO: Normal request 192.168.1.35_1745547264805 from 192.168.1.35 to /services: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:28,240 [NormalTraffic] INFO: Normal request 192.168.1.26_1745547268142 from 192.168.1.26 to /products: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:29,021 [DistributedAttack] WARNING: Starting distributed DDoS attack for 20 seconds - Thread: DistributedAttack
+2025-04-25 02:14:29,022 [DistributedAttack] WARNING: Distributed attack 10.0.0.1_1745547269021 from 10.0.0.1 to /login: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:29,272 [DistributedAttack] WARNING: Distributed attack 10.0.0.13_1745547269146 from 10.0.0.13 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:29,533 [DistributedAttack] WARNING: Distributed attack 10.0.0.14_1745547269436 from 10.0.0.14 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:29,768 [DistributedAttack] WARNING: Distributed attack 10.0.0.12_1745547269666 from 10.0.0.12 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:29,909 [NormalTraffic] INFO: Normal request 192.168.1.17_1745547269830 from 192.168.1.17 to /about: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:30,103 [DistributedAttack] WARNING: Distributed attack 10.0.0.16_1745547269973 from 10.0.0.16 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:30,318 [DistributedAttack] WARNING: Distributed attack 10.0.0.18_1745547270214 from 10.0.0.18 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:30,566 [DistributedAttack] WARNING: Distributed attack 10.0.0.20_1745547270469 from 10.0.0.20 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:30,751 [DistributedAttack] WARNING: Distributed attack 10.0.0.17_1745547270678 from 10.0.0.17 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:31,014 [DistributedAttack] WARNING: Distributed attack 10.0.0.15_1745547270919 from 10.0.0.15 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:31,224 [DistributedAttack] WARNING: Distributed attack 10.0.0.16_1745547271161 from 10.0.0.16 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:31,619 [DistributedAttack] WARNING: Distributed attack 10.0.0.11_1745547271485 from 10.0.0.11 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:31,917 [DistributedAttack] WARNING: Distributed attack 10.0.0.13_1745547271840 from 10.0.0.13 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:32,162 [DistributedAttack] WARNING: Distributed attack 10.0.0.2_1745547272161 from 10.0.0.2 to /: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:32,547 [DistributedAttack] WARNING: Distributed attack 10.0.0.13_1745547272412 from 10.0.0.13 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:32,971 [DistributedAttack] WARNING: Distributed attack 10.0.0.23_1745547272829 from 10.0.0.23 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:33,179 [DistributedAttack] WARNING: Distributed attack 10.0.0.8_1745547273179 from 10.0.0.8 to /api/data: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:33,416 [DistributedAttack] WARNING: Distributed attack 10.0.0.14_1745547273354 from 10.0.0.14 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:33,658 [NormalTraffic] INFO: Normal request 192.168.1.12_1745547273580 from 192.168.1.12 to /about: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:33,745 [DistributedAttack] WARNING: Distributed attack 10.0.0.20_1745547273625 from 10.0.0.20 to /search: Status: 500, Response: Simulated server error
+2025-04-25 02:14:34,005 [DistributedAttack] WARNING: Distributed attack 10.0.0.17_1745547273875 from 10.0.0.17 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:34,301 [DistributedAttack] WARNING: Distributed attack 10.0.0.1_1745547274158 from 10.0.0.1 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:34,669 [DistributedAttack] WARNING: Distributed attack 10.0.0.9_1745547274524 from 10.0.0.9 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:34,897 [DistributedAttack] WARNING: Distributed attack 10.0.0.24_1745547274785 from 10.0.0.24 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:35,007 [DistributedAttack] WARNING: Distributed attack 10.0.0.6_1745547275007 from 10.0.0.6 to /: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:35,141 [DistributedAttack] WARNING: Distributed attack 10.0.0.9_1745547275141 from 10.0.0.9 to /login: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:35,365 [DistributedAttack] WARNING: Distributed attack 10.0.0.21_1745547275305 from 10.0.0.21 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:35,584 [DistributedAttack] WARNING: Distributed attack 10.0.0.6_1745547275584 from 10.0.0.6 to /api/data: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:35,879 [DistributedAttack] WARNING: Distributed attack 10.0.0.21_1745547275741 from 10.0.0.21 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:36,068 [DistributedAttack] WARNING: Distributed attack 10.0.0.1_1745547276068 from 10.0.0.1 to /login: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:36,360 [DistributedAttack] WARNING: Distributed attack 10.0.0.3_1745547276295 from 10.0.0.3 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:36,529 [DistributedAttack] WARNING: Distributed attack 10.0.0.3_1745547276463 from 10.0.0.3 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:36,582 [NormalTraffic] INFO: Normal request 192.168.1.30_1745547276497 from 192.168.1.30 to /products: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:36,788 [DistributedAttack] WARNING: Distributed attack 10.0.0.16_1745547276705 from 10.0.0.16 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:37,119 [DistributedAttack] WARNING: Distributed attack 10.0.0.18_1745547276972 from 10.0.0.18 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:37,427 [DistributedAttack] WARNING: Distributed attack 10.0.0.23_1745547277349 from 10.0.0.23 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:37,685 [DistributedAttack] WARNING: Distributed attack 10.0.0.14_1745547277547 from 10.0.0.14 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:37,866 [DistributedAttack] WARNING: Distributed attack 10.0.0.18_1745547277801 from 10.0.0.18 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:38,131 [DistributedAttack] WARNING: Distributed attack 10.0.0.25_1745547278061 from 10.0.0.25 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:38,316 [DistributedAttack] WARNING: Distributed attack 10.0.0.9_1745547278315 from 10.0.0.9 to /search: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:38,533 [DistributedAttack] WARNING: Distributed attack 10.0.0.14_1745547278472 from 10.0.0.14 to /search: Status: 500, Response: Simulated server error
+2025-04-25 02:14:38,945 [DistributedAttack] WARNING: Distributed attack 10.0.0.24_1745547278798 from 10.0.0.24 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:39,213 [DistributedAttack] WARNING: Distributed attack 10.0.0.6_1745547279085 from 10.0.0.6 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:39,460 [DistributedAttack] WARNING: Distributed attack 10.0.0.4_1745547279460 from 10.0.0.4 to /login: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:39,803 [DistributedAttack] WARNING: Distributed attack 10.0.0.19_1745547279660 from 10.0.0.19 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:40,078 [DistributedAttack] WARNING: Distributed attack 10.0.0.22_1745547279997 from 10.0.0.22 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:40,478 [DistributedAttack] WARNING: Distributed attack 10.0.0.20_1745547280350 from 10.0.0.20 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:40,597 [DistributedAttack] WARNING: Distributed attack 10.0.0.9_1745547280597 from 10.0.0.9 to /api/data: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:41,022 [DistributedAttack] WARNING: Distributed attack 10.0.0.2_1745547280874 from 10.0.0.2 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:41,365 [DistributedAttack] WARNING: Distributed attack 10.0.0.2_1745547281277 from 10.0.0.2 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:41,525 [NormalTraffic] INFO: Normal request 192.168.1.18_1745547281411 from 192.168.1.18 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:41,586 [DistributedAttack] WARNING: Distributed attack 10.0.0.23_1745547281497 from 10.0.0.23 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:41,898 [DistributedAttack] WARNING: Distributed attack 10.0.0.24_1745547281785 from 10.0.0.24 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:42,136 [DistributedAttack] WARNING: Distributed attack 10.0.0.12_1745547282029 from 10.0.0.12 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:42,423 [DistributedAttack] WARNING: Distributed attack 10.0.0.21_1745547282366 from 10.0.0.21 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:42,544 [DistributedAttack] WARNING: Distributed attack 10.0.0.8_1745547282544 from 10.0.0.8 to /api/data: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:42,931 [DistributedAttack] WARNING: Distributed attack 10.0.0.11_1745547282830 from 10.0.0.11 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:43,178 [DistributedAttack] WARNING: Distributed attack 10.0.0.1_1745547283178 from 10.0.0.1 to /: Status: 400, Response: Bad Request: Invalid User-Agent
+2025-04-25 02:14:43,527 [DistributedAttack] WARNING: Distributed attack 10.0.0.25_1745547283415 from 10.0.0.25 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:43,738 [DistributedAttack] WARNING: Distributed attack 10.0.0.23_1745547283670 from 10.0.0.23 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:43,946 [DistributedAttack] WARNING: Distributed attack 10.0.0.24_1745547283863 from 10.0.0.24 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:44,226 [DistributedAttack] WARNING: Distributed attack 10.0.0.20_1745547284078 from 10.0.0.20 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:44,413 [DistributedAttack] WARNING: Distributed attack 10.0.0.21_1745547284346 from 10.0.0.21 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:44,761 [DistributedAttack] WARNING: Distributed attack 10.0.0.18_1745547284627 from 10.0.0.18 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:44,984 [DistributedAttack] WARNING: Distributed attack 10.0.0.11_1745547284899 from 10.0.0.11 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:45,346 [NormalTraffic] INFO: Normal request 192.168.1.12_1745547285198 from 192.168.1.12 to /products: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:45,393 [DistributedAttack] WARNING: Distributed attack 10.0.0.24_1745547285267 from 10.0.0.24 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:45,780 [DistributedAttack] WARNING: Distributed attack 10.0.0.16_1745547285657 from 10.0.0.16 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:46,073 [DistributedAttack] WARNING: Distributed attack 10.0.0.17_1745547285971 from 10.0.0.17 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:46,308 [DistributedAttack] WARNING: Distributed attack 10.0.0.16_1745547286185 from 10.0.0.16 to /api/data: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:46,670 [DistributedAttack] WARNING: Distributed attack 10.0.0.8_1745547286524 from 10.0.0.8 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:46,967 [DistributedAttack] WARNING: Distributed attack 10.0.0.15_1745547286846 from 10.0.0.15 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:47,240 [DistributedAttack] WARNING: Distributed attack 10.0.0.10_1745547287161 from 10.0.0.10 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:47,462 [DistributedAttack] WARNING: Distributed attack 10.0.0.17_1745547287359 from 10.0.0.17 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:47,851 [DistributedAttack] WARNING: Distributed attack 10.0.0.15_1745547287707 from 10.0.0.15 to /login: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:48,210 [DistributedAttack] WARNING: Distributed attack 10.0.0.16_1745547288108 from 10.0.0.16 to /search: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:48,571 [DistributedAttack] WARNING: Distributed attack 10.0.0.22_1745547288429 from 10.0.0.22 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:48,847 [DistributedAttack] WARNING: Distributed attack 10.0.0.11_1745547288745 from 10.0.0.11 to /: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:49,042 [MainThread] INFO: --- DDoS Protection Statistics ---
+2025-04-25 02:14:49,042 [MainThread] INFO: Total tracked IPs: 40
+2025-04-25 02:14:49,042 [MainThread] INFO: Blacklisted IPs: 0
+2025-04-25 02:14:49,043 [MainThread] INFO: Greylisted IPs: 0
+2025-04-25 02:14:49,043 [MainThread] INFO: IPs requiring CAPTCHA: 0
+2025-04-25 02:14:49,043 [MainThread] INFO: Trusted IPs: 0
+2025-04-25 02:14:49,043 [MainThread] INFO: Request patterns tracked: 66
+2025-04-25 02:14:49,043 [MainThread] INFO: Sample of IP reputation scores:
+2025-04-25 02:14:49,043 [MainThread] INFO: - 10.0.0.9: 500/1000
+2025-04-25 02:14:49,043 [MainThread] INFO: - 10.0.0.16: 500/1000
+2025-04-25 02:14:49,043 [MainThread] INFO: - 10.0.0.17: 500/1000
+2025-04-25 02:14:49,043 [MainThread] INFO: - 192.168.1.30: 500/1000
+2025-04-25 02:14:49,043 [MainThread] INFO: - 10.0.0.11: 500/1000
+2025-04-25 02:14:49,043 [MainThread] INFO: Waiting between attacks...
+2025-04-25 02:14:49,589 [NormalTraffic] INFO: Normal request 192.168.1.34_1745547289528 from 192.168.1.34 to /products: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:53,928 [NormalTraffic] INFO: Normal request 192.168.1.14_1745547293820 from 192.168.1.14 to /: Status: 500, Response: Simulated server error
+2025-04-25 02:14:54,043 [AdvancedAttack] WARNING: Starting advanced DDoS attack for 20 seconds - Thread: AdvancedAttack
+2025-04-25 02:14:54,044 [AdvancedAttack-0] INFO: Advanced attack thread 0 started using IP 10.0.84.224
+2025-04-25 02:14:54,044 [AdvancedAttack-1] INFO: Advanced attack thread 1 started using IP 10.0.141.57
+2025-04-25 02:14:54,044 [AdvancedAttack-2] INFO: Advanced attack thread 2 started using IP 10.0.248.240
+2025-04-25 02:14:54,045 [AdvancedAttack-3] INFO: Advanced attack thread 3 started using IP 10.0.225.178
+2025-04-25 02:14:54,045 [AdvancedAttack-4] INFO: Advanced attack thread 4 started using IP 10.0.162.38
+2025-04-25 02:14:54,098 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547294044 from 10.0.84.224: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,111 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547294045 from 10.0.225.178: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,131 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547294044 from 10.0.141.57: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,162 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547294045 from 10.0.162.38: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,177 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547294045 from 10.0.248.240: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,372 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547294298 from 10.0.84.224: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,393 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547294311 from 10.0.225.178: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,395 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547294331 from 10.0.141.57: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,414 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547294362 from 10.0.162.38: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,494 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547294377 from 10.0.248.240: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,686 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547294614 from 10.0.162.38: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,721 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547294593 from 10.0.225.178: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,722 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547294572 from 10.0.84.224: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,725 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547294595 from 10.0.141.57: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,829 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547294694 from 10.0.248.240: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:54,987 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547294887 from 10.0.162.38: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,018 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547294922 from 10.0.84.224: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,039 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547294921 from 10.0.225.178: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,043 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547294925 from 10.0.141.57: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,129 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547295029 from 10.0.248.240: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,312 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547295187 from 10.0.162.38: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,346 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547295218 from 10.0.84.224: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,368 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547295243 from 10.0.141.57: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,386 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547295239 from 10.0.225.178: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,422 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547295330 from 10.0.248.240: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,627 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547295546 from 10.0.84.224: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,647 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547295513 from 10.0.162.38: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,715 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547295568 from 10.0.141.57: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,722 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547295586 from 10.0.225.178: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,769 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547295622 from 10.0.248.240: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,898 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547295827 from 10.0.84.224: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:55,944 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547295847 from 10.0.162.38 BLOCKED: Status: 500, Response: Simulated server error
+2025-04-25 02:14:56,013 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547295915 from 10.0.141.57: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:56,015 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547295922 from 10.0.225.178: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:56,098 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547295969 from 10.0.248.240: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:56,199 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547296144 from 10.0.162.38: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:56,236 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547296098 from 10.0.84.224: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:56,334 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547296213 from 10.0.141.57: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:56,348 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547296215 from 10.0.225.178: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:56,396 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547296298 from 10.0.248.240: Status: 200, Response: 
+<html>
+    <head><title>Protected Simulated Serve...
+2025-04-25 02:14:56,399 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547296399 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: Please complete CAPTCHA to continue
+2025-04-25 02:14:56,436 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547296436 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: Please complete CAPTCHA to continue
+2025-04-25 02:14:56,535 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547296535 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: Please complete CAPTCHA to continue
+2025-04-25 02:14:56,548 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547296548 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: Please complete CAPTCHA to continue
+2025-04-25 02:14:56,596 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547296596 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: Please complete CAPTCHA to continue
+2025-04-25 02:14:56,599 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547296599 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,636 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547296636 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,735 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547296735 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,748 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547296748 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,797 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547296797 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,800 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547296800 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,836 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547296836 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,935 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547296935 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,949 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547296949 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:56,997 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547296997 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,000 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547297000 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,037 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547297037 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,135 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547297135 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,149 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547297149 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,197 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547297197 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,200 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547297200 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,237 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547297237 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,336 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547297336 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,349 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547297349 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,398 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547297398 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,400 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547297400 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,437 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547297437 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,536 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547297536 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,549 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547297549 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,598 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547297598 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,601 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547297600 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,637 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547297637 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,737 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547297736 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,750 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547297750 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,798 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547297798 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,801 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547297801 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,838 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547297838 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,937 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547297937 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,950 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547297950 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:57,999 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547297998 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,001 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547298001 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,038 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547298038 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,137 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547298137 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,150 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547298150 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,199 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547298199 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,201 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547298201 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,238 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547298238 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,337 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547298337 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,350 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547298350 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,399 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547298399 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,401 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547298401 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,438 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547298438 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,538 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547298538 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,550 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547298550 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,599 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547298599 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,601 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547298601 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,638 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547298638 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,738 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547298738 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,751 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547298751 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,799 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547298799 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,802 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547298802 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,839 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547298839 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,938 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547298938 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:58,951 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547298951 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,000 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547299000 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,002 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547299002 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,039 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547299039 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,138 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547299138 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,151 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547299151 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,200 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547299200 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,202 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547299202 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,239 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547299239 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,339 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547299339 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,351 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547299351 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,400 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547299400 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,402 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547299402 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,439 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547299439 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,539 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547299539 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,551 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547299551 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,600 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547299600 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,602 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547299602 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,639 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547299639 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,739 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547299739 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,752 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547299752 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,800 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547299800 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,803 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547299803 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,840 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547299840 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,939 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547299939 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:14:59,952 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547299952 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,001 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547300001 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,003 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547300003 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,040 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547300040 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,140 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547300139 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,152 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547300152 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,201 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547300201 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,203 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547300203 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,240 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547300240 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,340 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547300340 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,352 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547300352 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,401 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547300401 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,403 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547300403 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,440 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547300440 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,540 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547300540 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,553 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547300552 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,602 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547300601 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,604 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547300603 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,640 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547300640 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,740 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547300740 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,753 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547300753 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,802 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547300802 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,804 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547300804 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,841 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547300841 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,941 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547300941 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:00,953 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547300953 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,002 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547301002 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,004 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547301004 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,041 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547301041 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,141 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547301141 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,153 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547301153 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,202 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547301202 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,204 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547301204 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,241 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547301241 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,341 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547301341 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,353 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547301353 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,402 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547301402 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,405 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547301404 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,441 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547301441 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,541 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547301541 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,554 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547301554 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,603 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547301603 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,605 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547301605 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,642 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547301641 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,742 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547301742 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,754 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547301754 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,803 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547301803 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,805 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547301805 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,842 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547301842 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,942 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547301942 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:01,954 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547301954 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,003 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547302003 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,005 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547302005 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,042 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547302042 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,142 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547302142 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,154 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547302154 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,203 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547302203 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,205 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547302205 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,242 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547302242 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,343 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547302342 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,355 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547302354 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,404 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547302404 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,406 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547302406 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,442 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547302442 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,543 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547302543 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,555 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547302555 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,604 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547302604 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,606 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547302606 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,643 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547302643 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,743 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547302743 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,755 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547302755 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,804 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547302804 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,806 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547302806 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,843 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547302843 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,943 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547302943 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:02,955 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547302955 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,004 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547303004 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,006 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547303006 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,043 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547303043 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,144 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547303144 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,155 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547303155 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,205 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547303205 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,206 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547303206 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,243 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547303243 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,344 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547303344 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,356 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547303355 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,405 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547303405 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,407 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547303407 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,443 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547303443 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,544 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547303544 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,556 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547303556 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,605 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547303605 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,607 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547303607 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,644 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547303644 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,744 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547303744 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,756 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547303756 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,805 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547303805 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,807 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547303807 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,844 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547303844 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,945 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547303945 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:03,956 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547303956 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,006 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547304006 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,007 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547304007 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,044 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547304044 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,145 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547304145 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,157 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547304157 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,206 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547304206 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,207 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547304207 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,244 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547304244 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,345 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547304345 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,357 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547304357 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,406 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547304406 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,408 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547304408 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,445 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547304444 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,546 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547304546 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,557 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547304557 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,607 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547304607 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,608 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547304608 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,645 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547304645 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,746 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547304746 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,757 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547304757 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,807 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547304807 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,808 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547304808 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,845 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547304845 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,946 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547304946 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:04,957 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547304957 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,007 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547305007 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,008 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547305008 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,045 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547305045 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,146 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547305146 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,158 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547305158 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,207 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547305207 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,208 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547305208 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,245 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547305245 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,347 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547305347 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,358 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547305358 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,408 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547305408 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,409 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547305409 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,446 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547305446 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,547 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547305547 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,558 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547305558 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,608 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547305608 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,609 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547305609 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,646 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547305646 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,747 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547305747 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,758 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547305758 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,808 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547305808 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,809 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547305809 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,846 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547305846 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,948 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547305947 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:05,958 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547305958 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,008 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547306008 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,009 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547306009 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,046 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547306046 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,148 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547306148 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,159 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547306159 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,209 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547306209 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,210 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547306209 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,246 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547306246 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,348 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547306348 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,359 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547306359 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,409 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547306409 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,410 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547306410 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,447 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547306447 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,548 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547306548 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,559 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547306559 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,609 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547306609 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,610 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547306610 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,647 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547306647 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,749 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547306749 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,759 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547306759 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,809 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547306809 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,810 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547306810 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,847 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547306847 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,949 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547306949 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:06,959 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547306959 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,010 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547307010 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,010 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547307010 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,047 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547307047 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,149 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547307149 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,160 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547307160 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,210 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547307210 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,211 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547307210 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,248 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547307247 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,350 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547307350 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,360 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547307360 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,410 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547307410 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,412 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547307412 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,448 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547307448 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,550 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547307550 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,560 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547307560 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,611 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547307611 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,612 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547307612 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,648 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547307648 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,750 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547307750 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,760 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547307760 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,811 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547307811 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,813 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547307813 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,848 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547307848 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,951 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547307950 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:07,961 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547307961 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,011 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547308011 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,013 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547308013 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,049 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547308048 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,151 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547308151 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,161 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547308161 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,211 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547308211 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,213 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547308213 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,249 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547308249 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,351 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547308351 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,361 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547308361 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,412 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547308412 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,413 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547308413 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,449 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547308449 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,551 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547308551 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,561 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547308561 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,612 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547308612 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,613 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547308613 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,649 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547308649 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,752 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547308752 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,761 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547308761 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,812 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547308812 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,814 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547308814 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,849 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547308849 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,952 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547308952 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:08,962 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547308962 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,012 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547309012 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,014 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547309014 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,050 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547309050 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,152 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547309152 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,162 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547309162 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,213 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547309213 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,214 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547309214 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,250 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547309250 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,353 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547309353 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,362 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547309362 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,413 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547309413 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,414 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547309414 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,450 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547309450 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,553 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547309553 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,562 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547309562 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,613 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547309613 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,615 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547309615 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,650 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547309650 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,753 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547309753 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,762 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547309762 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,813 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547309813 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,815 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547309815 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,850 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547309850 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,953 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547309953 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:09,963 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547309963 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,014 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547310014 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,015 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547310015 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,051 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547310051 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,154 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547310154 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,163 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547310163 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,214 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547310214 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,215 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547310215 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,251 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547310251 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,354 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547310354 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,363 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547310363 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,414 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547310414 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,415 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547310415 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,451 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547310451 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,554 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547310554 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,563 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547310563 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,614 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547310614 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,616 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547310616 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,651 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547310651 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,755 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547310754 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,764 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547310764 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,815 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547310815 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,816 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547310816 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,852 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547310851 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,955 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547310955 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:10,964 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547310964 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,015 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547311015 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,016 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547311016 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,052 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547311052 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,155 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547311155 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,164 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547311164 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,215 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547311215 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,216 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547311216 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,252 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547311252 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,355 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547311355 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,364 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547311364 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,415 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547311415 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,417 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547311416 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,452 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547311452 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,556 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547311556 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,564 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547311564 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,616 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547311616 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,617 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547311617 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,652 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547311652 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,756 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547311756 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,765 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547311765 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,816 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547311816 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,817 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547311817 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,853 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547311853 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,956 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547311956 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:11,965 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547311965 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,016 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547312016 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,017 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547312017 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,053 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547312053 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,156 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547312156 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,165 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547312165 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,216 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547312216 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,217 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547312217 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,253 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547312253 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,357 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547312357 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,365 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547312365 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,417 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547312417 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,418 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547312418 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,453 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547312453 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,557 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547312557 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,565 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547312565 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,617 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547312617 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,618 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547312618 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,654 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547312653 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,757 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547312757 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,766 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547312766 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,817 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547312817 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,818 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547312818 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,854 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547312854 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,958 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547312958 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:12,966 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547312966 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,017 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547313017 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,018 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547313018 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,054 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547313054 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,158 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547313158 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,166 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547313166 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,218 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547313218 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,219 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547313219 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,254 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547313254 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,358 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547313358 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,366 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547313366 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,418 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547313418 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,419 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547313419 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,454 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547313454 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,558 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547313558 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,566 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547313566 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,618 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547313618 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,619 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547313619 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,655 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547313655 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,759 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547313759 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,767 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547313767 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,818 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547313818 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,819 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547313819 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,855 [AdvancedAttack-0] WARNING: Advanced attack 10.0.84.224_1745547313855 from 10.0.84.224 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,959 [AdvancedAttack-1] WARNING: Advanced attack 10.0.141.57_1745547313959 from 10.0.141.57 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:13,967 [AdvancedAttack-3] WARNING: Advanced attack 10.0.225.178_1745547313967 from 10.0.225.178 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:14,018 [AdvancedAttack-2] WARNING: Advanced attack 10.0.248.240_1745547314018 from 10.0.248.240 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:14,019 [AdvancedAttack-4] WARNING: Advanced attack 10.0.162.38_1745547314019 from 10.0.162.38 BLOCKED: Status: 403, Response: Access Denied: CAPTCHA required
+2025-04-25 02:15:14,055 [AdvancedAttack-0] INFO: Advanced attack thread 0 finished
+2025-04-25 02:15:14,159 [AdvancedAttack-1] INFO: Advanced attack thread 1 finished
+2025-04-25 02:15:14,167 [AdvancedAttack-3] INFO: Advanced attack thread 3 finished
+2025-04-25 02:15:14,219 [AdvancedAttack-2] INFO: Advanced attack thread 2 finished
+2025-04-25 02:15:14,220 [AdvancedAttack-4] INFO: Advanced attack thread 4 finished
+2025-04-25 02:15:14,220 [MainThread] INFO: --- DDoS Protection Statistics ---
+2025-04-25 02:15:14,220 [MainThread] INFO: Total tracked IPs: 47
+2025-04-25 02:15:14,220 [MainThread] INFO: Blacklisted IPs: 0
+2025-04-25 02:15:14,220 [MainThread] INFO: Greylisted IPs: 0
+2025-04-25 02:15:14,220 [MainThread] INFO: IPs requiring CAPTCHA: 5
+2025-04-25 02:15:14,220 [MainThread] INFO: Trusted IPs: 0
+2025-04-25 02:15:14,220 [MainThread] INFO: Request patterns tracked: 66
+2025-04-25 02:15:14,220 [MainThread] INFO: Sample of IP reputation scores:
+2025-04-25 02:15:14,221 [MainThread] INFO: - 192.168.1.4: 500/1000
+2025-04-25 02:15:14,221 [MainThread] INFO: - 10.0.0.14: 500/1000
+2025-04-25 02:15:14,221 [MainThread] INFO: - 10.0.248.240: 500/1000
+2025-04-25 02:15:14,221 [MainThread] INFO: - 192.168.1.46: 500/1000
+2025-04-25 02:15:14,221 [MainThread] INFO: - 10.0.162.38: 500/1000
+2025-04-25 02:15:14,221 [MainThread] INFO: Waiting for remaining normal traffic to complete...
+2025-04-25 02:15:14,221 [MainThread] INFO: === Simulation Complete ===
+2025-04-25 02:15:14,221 [MainThread] INFO: Total requests processed: 165
+2025-04-25 02:15:14,221 [MainThread] INFO: Complete log saved to: logs/ddos_simulation_20250425_021354.log

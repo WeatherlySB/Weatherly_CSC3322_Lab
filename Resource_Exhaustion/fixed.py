@@ -91,7 +91,7 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
     
     
     
-    # STEP 3: Check blacklist and greylist
+    # Check blacklist and greylist
     if client_ip in port_funct.data['ip_blacklist']:
         return SimulatedResponse(403, "Forbidden: Your IP has been blocked due to suspicious activity")
     
@@ -99,14 +99,14 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
         # Greylisted IPs get an exponential backoff response
         return SimulatedResponse(429, "Too Many Requests: Please try again later")
     
-    # STEP 4: Country-based rate limiting
+    # Country-based rate limiting
     if country_code in port_funct.data['country_limits']:
         port_funct.data['country_limits'][country_code]['count'] += 1
         if port_funct.data['country_limits'][country_code]['count'] > port_funct.data['country_limits'][country_code]['limit']:
             # If this country is exceeding its limit, add a delay but don't block entirely
             time.sleep(random.uniform(1, 3))
     
-    # STEP 5: Check for required CAPTCHA
+    # check for required CAPTCHA
     if client_ip in port_funct.data['captcha_required']:
         captcha_token = params.get('captcha_token', '')
         if not captcha_token or captcha_token != f"valid_{client_ip}":  # Simplified CAPTCHA check
@@ -115,7 +115,7 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
             # Successfully solved CAPTCHA, remove from required list
             port_funct.data['captcha_required'].remove(client_ip)
     
-    # STEP 6: Initialize or update IP tracking
+    # Initialize or update IP tracking
     if client_ip not in port_funct.data['ip_requests']:
         port_funct.data['ip_requests'][client_ip] = {
             'count': 0,
@@ -131,11 +131,11 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
         # New IPs start with a neutral reputation
         port_funct.data['ip_reputation'][client_ip] = 500  # Scale 0-1000, higher is better
     
-    # STEP 7: Update global rate limiting data
+    # Update global rate limiting data
     port_funct.data['request_timestamps'].append(current_time)
     recent_requests = len(port_funct.data['request_timestamps'])
     
-    # STEP 8: Apply global rate limiting tiers
+    # Apply global rate limiting tiers
     if recent_requests > 10000:  # Severe attack: > 166 req/sec
         if client_ip not in port_funct.data['trusted_ips']:
             return SimulatedResponse(503, "Service Unavailable: Server under high load")
@@ -148,7 +148,7 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
                 time.sleep(random.uniform(1, 2))  # Add delay for suspicious IPs
                 return SimulatedResponse(429, "Too Many Requests: Server under high load")
     
-    # STEP 9: Update IP-specific data
+    # Update IP-specific data
     ip_data = port_funct.data['ip_requests'][client_ip]
     ip_data['count'] += 1
     ip_data['last_seen'] = current_time
@@ -168,7 +168,7 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
     ip_data['recent_reqs'].append(current_time)
     ip_data['recent_reqs'] = [t for t in ip_data['recent_reqs'] if t > current_time - 10]
     
-    # STEP 10: Behavioral analysis
+    # Behavioral analysis
     # Check for consistent, robotic intervals (bot detection)
     if len(ip_data['request_intervals']) >= 5:
         intervals = ip_data['request_intervals'][-5:]
@@ -183,7 +183,7 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
                 port_funct.data['captcha_required'].add(client_ip)
                 return SimulatedResponse(403, "Access Denied: Please complete CAPTCHA to continue")
     
-    # STEP 11: Advanced rate limiting
+    #  Advanced rate limiting
     req_per_second = len(ip_data['recent_reqs'])
     if req_per_second > 30:  # More than 30 req/sec from this IP - severe
         # Add to permanent blacklist after excessive requests
@@ -201,7 +201,7 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
         if random.random() < 0.7:  # 70% chance of being limited
             time.sleep(random.uniform(0.5, 1.5))  # Add artificial delay
     
-    # STEP 12: User-Agent validation
+    #  User-Agent validation
     if not user_agent or 'bot' in user_agent.lower() or len(user_agent) < 10:
         if ip_data['count'] > 5:  # Allow a few requests without UA for testing
             ip_data['suspicious_actions'] += 1
@@ -212,7 +212,7 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
         # Multiple user agents in a short time period
         ip_data['suspicious_actions'] += 1
     
-    # STEP 13: Request pattern detection
+    #  Request pattern detection
     request_signature = f"{method}:{path}:{sorted(str(params.items()))}"
     if request_signature in port_funct.data['request_patterns']:
         pattern_data = port_funct.data['request_patterns'][request_signature]
@@ -235,14 +235,14 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
             'first_seen': current_time
         }
     
-    # STEP 14: Content-based protection
+    # Content-based protection
     # Check for suspiciously large payloads or query params
     query_size = len(str(params))
     if query_size > 1000:
         ip_data['suspicious_actions'] += 1
         return SimulatedResponse(413, "Payload Too Large")
     
-    # STEP 15: Dynamic reputation adjustment
+    # Dynamic reputation adjustment
     # Legitimate request behavior gradually improves reputation
     if ip_data['count'] % 10 == 0 and ip_data['suspicious_actions'] == 0:
         port_funct.data['ip_reputation'][client_ip] = min(1000, port_funct.data['ip_reputation'][client_ip] + 10)
@@ -251,14 +251,14 @@ def port_funct(method, path, params, headers, response_delay, error_rate, reques
     if ip_data['count'] > 100 and ip_data['suspicious_actions'] == 0 and port_funct.data['ip_reputation'][client_ip] > 800:
         port_funct.data['trusted_ips'].add(client_ip)
     
-    # STEP 16: Add jitter to response time to prevent timing attacks
+    # Add jitter to response time to prevent timing attacks
     jitter = random.uniform(0.05, response_delay * 1.5)
     time.sleep(jitter)
     
-    # STEP 17: Update request counter after all checks passed
+    #  Update request counter after all checks passed
     request_count_tracker[0] += 1 
     
-    # STEP 18: Apply normal error simulation if needed
+    #  Apply normal error simulation if needed
     if random.random() < error_rate:
         ip_data['response_errors'] += 1
         return SimulatedResponse(500, "Simulated server error")
